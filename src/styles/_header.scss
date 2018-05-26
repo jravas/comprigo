@@ -1,0 +1,54 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  .logo {
+
+  }
+  .search {
+    width: 265px;
+    position: relative;
+    margin-left: 50px;
+    input {
+      width: 100%;
+      padding-right: 17px;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #d5d5d5;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    svg {
+      position: absolute;
+      bottom: 7px;
+      right: 0;
+    }
+  }
+  nav {
+    margin-left: auto;
+    ul {
+      display: flex;
+      li {
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+          padding-left: 20px;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          color: #0f7ec2;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+        @media screen and (max-width: 1280px) {
+          &:not(:last-child) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

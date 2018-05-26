@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="container">
+    <!-- ***** site header ***** -->
+    <header class="main-header">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="27" viewBox="0 0 150 27"><g><g transform="translate(-119 -15)"><image width="150" height="27" transform="translate(119 15)" xlink:href="data:image/png;base64,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"/></g></g></svg>
+      </a>
+      <div class="search">
+        <input type="text" name="search" placeholder="Such nach Produkten und Shops...">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><defs><path id="f8goa" d="M580.7 36.23a1.04 1.04 0 1 1-1.47 1.47l-2.93-2.93c-.1-.1-.18-.23-.23-.36A7.43 7.43 0 0 1 571.5 36a7.5 7.5 0 1 1 7.5-7.5c0 1.73-.6 3.3-1.59 4.57.13.05.25.12.36.23zM571.5 23a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></defs><g><g transform="translate(-564 -21)"><use fill="#454545" xlink:href="#f8goa"/></g></g></svg>
+      </div>
+      <!-- ***** main navigation ***** -->
+      <nav>
+        <ul>
+          <li><a href="#">tech</a></li>
+          <li><a href="#">entertainment</a></li>
+          <li><a href="#">travel</a></li>
+          <li><a href="#">lifestyle</a></li>
+          <li><a href="#">all categories</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="14" viewBox="0 0 19 14"><defs><path id="c0qra" d="M1279 37v-2h-19v2zm-19-6h19v-2h-19zm0-6h19v-2h-19z"/></defs><g><g transform="translate(-1260 -23)"><use fill="#454545" xlink:href="#c0qra"/></g></g></svg></a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- ***** leading banner ***** -->
+  <article class="banner">
+    <div class="container banner-inner">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="46" viewBox="0 0 136 46"><g><g transform="translate(-122 -110)"><image width="136" height="46" transform="translate(122 110)" xlink:href="data:image/png;base64,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"/></g></g></svg>
+      </div>
+      <section class="info">
+        <h1>Otto Coupons &amp; offers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris urna turpis, dignissim in porta vitae lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper lectus et sem convallis, in vehicula est condimentum. In sodales leopardo integer...</p>
+        <a href="#">SEE MORE</a>
+      </section>
+    </div>
+  </article>
+  <div class="container">
+    <!-- ***** coupons filtering and subscribe ***** -->
+    <section class="filters-subscribe">
+      <!-- ***** coupons filering ***** -->
+      <section class="filters">
+        <div class="filter active" id="all">
+          <span class="text">all</span>
+          <span class="number">7</span>
+        </div>
+        <div class="filter" id="expiring">
+          <span class="text">EXPIRING SOON</span>
+          <span class="number">3</span>
+        </div>
+        <div class="filter" id="verified">
+          <span class="text">VERIFIED</span>
+          <span class="number">5</span>
+        </div>
+        <div class="filter" id="code">
+          <span class="text">WITH A CODE</span>
+          <span class="number">4</span>
+        </div>
+      </section>
+      <section class="subscribe">
+        <button>subscribe</button>
+      </section>
+    </section>
+  </div>
+  <div class="container main-container">
+    <!-- ***** main content ***** -->
+    <main>
+      <!-- ***** coupons list ***** -->
+      <section id="coupons-list">
+        <!-- ***** single coupon populating with index.js  ***** -->
+      </section>
+    </main>
+    <!-- ***** main sidebar ***** -->
+    <aside>
+      <!-- ***** deals-list ***** -->
+      <section class="deals">
+        <figure>
+          <a href="#"><img src=<%= require("./images/deal-1.svg") %> alt="Deal image"></a>
+        </figure>
+        <figure>
+          <a href="#"><img src=<%= require("./images/deal-2.svg") %> alt="Deal image"></a>
+        </figure>
+        <figure>
+            <a href="#"><img src=<%= require("./images/deal-3.svg") %> alt="Deal image"></a>
+        </figure>
+        <figure>
+          <a href="#"><img src=<%= require("./images/deal-4.svg") %> alt="Deal image"></a>
+        </figure>
+      </section>
+      <!-- ***** more deals link ***** -->
+      <section class="more-deals">
+        <a href="#">show more deals ></a>
+      </section>
+      <!-- ***** related articles list ***** -->
+      <section class="related-articles">
+        <header><h1 class="related-articles-title">related articles</h1></header>
+        <article>
+          <header>
+            <h1>Dieses spielzeug von "Star wars" erweckt die macht in dir</h1>
+          </header>
+          <time>18 Dec 2017</time>
+        </article>
+        <article>
+          <header>
+            <h1>Diese smartwatches verbinden sich reibungslos mit deinem smartphone</h1>
+          </header>
+          <time>5 Dec 2017</time>
+        </article>
+        <article>
+          <header>
+            <h1>Leidest du an trennungsschmerz? Diese tipps helfen dir dabei, ihn zu überwinden</h1>
+          </header>
+          <time>12 Nov 2017</time>
+        </article>
+        <article>
+          <header>
+            <h1>13 coole geschenke für menschen mit einer geheimen leidenschaft für die gewürzgurke</h1>
+          </header>
+          <time>8 Nov 2017</time>
+        </article>
+      </section>
+    </aside>
+  </div>
+  <!-- ***** main footer ***** -->
+  <footer>
+  </footer>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

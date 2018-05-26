@@ -1,0 +1,87 @@
+// sidebar
+aside {
+  max-width: 338px;
+  width: 100%;
+  margin-left: 60px;
+  @media screen and (max-width: 1280px){
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .deals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    figure {
+      margin-top: 15px;
+      &:first-child, &:nth-child(2){
+        margin-top: 0;
+      }
+      a {
+        display: block;
+      }
+      @media screen and (max-width: 1280px) {
+        margin-top: 0;
+      }
+    }
+    img {
+      display: block;
+    }
+  }
+  .more-deals {
+    line-height: 60px;
+    text-align: right;
+    a {
+      color: #0f7ec2;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  .related-articles {
+    background-color: #f6f6f6;
+    padding: 22px;
+    .related-articles-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      display: inline-block;
+      border-bottom: 2px solid #cccccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    article {
+      position: relative;
+      margin-left: 10px;
+      padding-left: 30px;
+      border-left: 2px dashed #cccccc;
+      &:last-child {
+        border-left: none;
+      }
+      &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        left: -10.5px;
+      }
+      h1 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+      time {
+        display: inline-block;
+        padding-top: 15px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #888888;
+      }
+    }
+  }
+}
